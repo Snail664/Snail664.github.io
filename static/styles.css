@@ -1,0 +1,84 @@
+.root {
+  background-color: #4d5466;
+  overflow-x: hidden;
+}
+
+.first_parallax {
+  background-image: url("./background/firstParallaxBackground.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading_text {
+  font-weight: 900;
+  color: white;
+}
+
+.subheading_text {
+  font-weight: 900;
+  color: white;
+}
+
+.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.horizontally_centered {
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.download_button {
+  border: gold solid 1px;
+  border-radius: 10px;
+  width: 300px;
+  height: 65px;
+  color: white;
+  background-color: transparent;
+}
+
+.download_button:hover {
+  border-radius: 10px;
+  border: gold solid 1px;
+  color: black;
+  background-color: #4d5466;
+  transition: all 0.8s;
+}
+
+.section--header {
+  font-size: 5rem;
+  padding-bottom: 30px;
+}
+
+.section--dark {
+  color: white;
+  background-color: black;
+}
+
+.section--light {
+  color: black;
+  background-color: #343c4f;
+}
+
+section {
+  font-weight: 900;
+  width: 46rem;
+  transition: color 0.3s;
+}
+
+section.active {
+  color: orange;
+}
