@@ -1,5 +1,6 @@
 .root {
   overflow-x: hidden;
+  min-height: 2000px;
 }
 
 .first_parallax {
@@ -9,6 +10,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.orange {
+  color: orange;
 }
 
 .heading_text {
@@ -97,26 +102,6 @@ a:hover {
   background-color: #3d87ff;
 }
 
-.section--three {
-  color: black;
-  background-color: #003811;
-}
-
-.section--four {
-  background-color: #ff5e5e;
-  color: black;
-}
-
-.section--five {
-  color: black;
-  background-color: #0f005c;
-}
-
-.section--six {
-  color: black;
-  background-color: #2b699c;
-}
-
 section {
   font-weight: 900;
   width: 100vw;
@@ -138,4 +123,22 @@ section.active {
   font-weight: 600;
   background-color: orange;
   transition: all 0.8s;
+}
+
+.card {
+  color: black;
+  padding: 10px;
+  height: 350px;
+  width: 350px;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.journey_line {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 1px;
+  background-color: orange;
+  height: 1200px;
 }
