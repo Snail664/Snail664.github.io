@@ -145,6 +145,15 @@
 
     <!-- script for animation -->
     <script>
+      window.onload = function() {
+        console.log('REady!')
+        const hash = window.location.hash
+
+        if (hash === "#contact") {
+          const contact = document.getElementById("contact")
+          contact.scrollIntoView()
+        }
+
         // intro animation
         gsap.timeline()
         .from('.drop_in', {opacity: 0, duration: 1.5, y:-120, ease: 'Power2.easeInOut'})
@@ -196,6 +205,7 @@
       .from('.arrow_1', {opacity: 0, ease: 'Power2.easeInOut'})
       .from('.arrow_2', {opacity: 0, ease: 'Power2.easeInOut'})
       .from('.arrow_3', {opacity: 0, ease: 'Power2.easeInOut'})
+      }
       
     </script>
   </body>
