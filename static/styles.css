@@ -12,6 +12,15 @@
   background-size: cover;
 }
 
+.journey_parallax {
+  background-image: url("./background/background1.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .orange {
   color: orange;
 }
@@ -136,9 +145,9 @@ section.active {
 
 .journey_line {
   position: absolute;
-  left: 50%;
-  top: 30%;
+  top: 7%;
+  left: 50vw;
   width: 1px;
   background-color: orange;
-  height: 1200px;
+  height: 1600px;
 }
