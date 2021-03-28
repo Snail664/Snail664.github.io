@@ -137,17 +137,16 @@ section.active {
 .card {
   color: black;
   padding: 10px;
-  height: 350px;
-  width: 350px;
+  width: 30%;
+  margin-bottom: 10px;
+  min-width: 300px;
   background-color: orange;
   border-radius: 10px;
 }
 
 .journey_line {
-  position: absolute;
-  top: 7%;
+  position: fixed;
   left: 50vw;
-  width: 1px;
+  height: 100vh;
   background-color: orange;
-  height: 1600px;
 }
