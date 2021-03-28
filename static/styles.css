@@ -18,18 +18,27 @@
 
 .subheading_text {
   font-weight: 900;
-  color: gold;
+  color: orange;
 }
 
 .scroll_arrow_line {
   width: 2px;
-  height: 200px;
+  height: 100px;
   margin-left: 4px;
   background-color: white;
 }
 
 .scroll_arrow {
-  border: solid white;
+  border: solid orange;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.three_arrows {
+  border: solid orange;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -57,7 +66,7 @@ a:hover {
 }
 
 .download_button {
-  border: gold solid 1px;
+  border: orange solid 1px;
   border-radius: 10px;
   width: 300px;
   height: 65px;
@@ -67,9 +76,9 @@ a:hover {
 
 .download_button:hover {
   border-radius: 10px;
-  border: gold solid 1px;
+  border: orange solid 1px;
   color: black;
-  background-color: gold;
+  background-color: orange;
   transition: all 0.8s;
 }
 
@@ -127,6 +136,6 @@ section.active {
 .nav_link:hover {
   color: black;
   font-weight: 600;
-  background-color: gold;
+  background-color: orange;
   transition: all 0.8s;
 }
