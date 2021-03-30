@@ -1,5 +1,6 @@
 .root {
-  min-height: 2000px;
+  background-color: #1e1e1e;
+  overflow-x: hidden;
 }
 
 .first_parallax {
@@ -168,4 +169,9 @@ section.active {
   background-color: #3c4042;
   border-radius: 10px;
   padding: 10px;
+}
+
+.project_box {
+  border-radius: 10px;
+  background-color: #272d33;
 }
