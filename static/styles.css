@@ -4,7 +4,7 @@
 
 .first_parallax {
   background-image: url("./background/firstParallaxBackground.jpg");
-  min-height: 900px;
+  min-height: 800px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
