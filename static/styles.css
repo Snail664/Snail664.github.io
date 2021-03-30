@@ -4,7 +4,7 @@
 
 .first_parallax {
   background-image: url("./background/firstParallaxBackground.jpg");
-  min-height: 800px;
+  min-height: 900px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -81,8 +81,8 @@ a:hover {
 .download_button {
   border: orange solid 1px;
   border-radius: 10px;
-  width: 300px;
-  height: 65px;
+  width: 100%;
+  padding: 20px;
   color: white;
   background-color: transparent;
 }
@@ -148,4 +148,18 @@ section.active {
   left: 50vw;
   height: 100vh;
   background-color: orange;
+}
+
+.half_section {
+  background-color: #1f1f1f;
+  color: white;
+  font-weight: 900;
+  transition: all 0.8s;
+}
+
+.half_section_hover {
+  background-color: white;
+  color: black;
+  font-weight: 900;
+  transition: all 0.8s;
 }
