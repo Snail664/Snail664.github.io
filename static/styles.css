@@ -1,5 +1,11 @@
 .root {
-  min-height: 2000px;
+  background-color: #1e1e1e;
+  overflow-x: hidden;
+}
+
+.root_white {
+  background-color: white;
+  overflow-x: hidden;
 }
 
 .first_parallax {
@@ -112,7 +118,7 @@ a:hover {
 
 section {
   font-weight: 900;
-  width: 100vw;
+
   transition: color 0.3s;
 }
 
@@ -151,21 +157,31 @@ section.active {
 }
 
 .half_section {
-  background-color: #1f1f1f;
   color: white;
+  background-color: #1e1e1e;
   font-weight: 900;
-  transition: all 0.8s;
 }
 
 .half_section_hover {
   background-color: white;
   color: black;
   font-weight: 900;
-  transition: all 0.8s;
 }
 
 .journey_box {
   background-color: #3c4042;
   border-radius: 10px;
   padding: 10px;
+}
+
+.diagonal-box {
+  background-color: #343434;
+  transform: skewY(-11deg);
+  padding: 100px;
+}
+
+.content {
+  max-width: 50em;
+  margin: 0 auto;
+  transform: skewY(11deg);
 }

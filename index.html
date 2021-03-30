@@ -1,201 +1,295 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
     <!-- stylesheet -->
-    <link href='./static/styles.css' rel='stylesheet' type="text/css">
+    <link href="./static/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./static/special.scss" rel="stylesheet" type="text/scss" />
     <title>Chiraag</title>
   </head>
-  <body style="background-color: #1E1E1E; overflow-x: hidden;">
+  <body class="root">
+    <!-- Header Navbar -->
+    <div class="d-flex justify-content-center">
+      <div class="w-75 d-flex justify-content-between">
+        <a href="/projects" class="w-100 pt-3 pb-2 text-center nav_link"
+          >Projects</a
+        >
+        <a href="/journey" class="w-100 pt-3 pb-2 text-center nav_link"
+          >My Journey</a
+        >
+        <a href="#contact" class="w-100 pt-3 pb-2 text-center nav_link"
+          >Contact</a
+        >
+      </div>
+    </div>
 
-        <!-- Header Navbar -->
-        <div class="d-flex justify-content-center">
-          <div class="w-75 d-flex justify-content-between">
-              <a href="/projects" class="w-100 pt-3 pb-2 text-center nav_link">Projects</a>
-              <a href="/journey" class="w-100 pt-3 pb-2 text-center nav_link">My Journey</a>
-              <a href="#contact" class="w-100 pt-3 pb-2 text-center nav_link">Contact</a>
-          </div>
-        </div>
-
-        <!--main parallax image and text-->
-        <div class="first_parallax d-flex justify-content-center">
-          <div id='main-text' style='margin-top: 20%;'>
-            <h1 class="drop_in display-1 font-weight-bold heading_text">
-              <span style="color: orange">C</span>hiraag
-               <span style="color: orange">S</span>
-               <span style="color: orange">A</span>nand
-            </h1>
-            <div style="position: sticky;" id='labels'>
-              <h4 id='avidLearner' class="subheading_text">Avid Learner</h4>
-              <h4 id='techEnthusiast' class="subheading_text">Tech Enthusiast</h4>
-            </div>
-            <div class='scroll_arrow_line'></div>
-            <div class="scroll_arrow"></div>
-        </div>
-        </div>
-        
-    
-        <!-- intro section -->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10 bg-dark">
-              <div class="d-flex align-items-center flex-column justify-content-center pt-5 pb-5">
-                <h1 class="text-center heading_text">Intro</h1>
-                <br>
-                <p class="delayed_slide_in p-5 subheading_text">Hello! Chiraag here. Having completed my national service, I am constantly seeking opportunities to grow professionally and as a person. I have a deep passion for technology and a strong interest in business development and finding solutions.</p>
-                <br>
-                <br>
-                <div class="mx-auto">
-                    <a href="./static/Anand Chiraag Singh Resume.pdf" download><button class="download_button">
-                        <h4>Download Resume</h4></button></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-1"></div>
-          </div>
-        </div>
-
-        
-        <!-- Tech skills -->
-        <section class="mt-5 mb-5" id="skills">
-          <div class="container">
-              <h1 class="heading_text text-center">Skills</h1>
-              <hr class="divider my-4" />
-              <div class="row">
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="mt-5">
-                        <div style="height: 70px;">
-                          <img src="https://img.icons8.com/nolan/64/javascript.png"/>
-                        </div>
-                          <h3 class="h4 mb-2 mt-4 text-white">Javascript</h3>
-                          <p class="text-muted mb-0">Javascript and frontend frameworks such as ReactJS, Redux and NextJS. Backend with Node.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="mt-5">
-                        <div style="height: 70px;">
-                          <img src="https://img.icons8.com/fluent/48/000000/source-code.png"/>
-                        </div>
-                          <h3 class="h4 mt-4 mb-2 text-white">HTML & CSS</h3>
-                          <p class="text-muted mb-0">Skilled with HTML, CSS and front end libraries such as Bootstrap.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="mt-5">
-                        <div style="height: 70px;">
-                          <img src="https://img.icons8.com/dusk/64/000000/cloud-database.png"/>
-                        </div>
-                          <h3 class="h4 mb-2 mt-4 text-white">Backend (Web)</h3>
-                          <p class="text-muted mb-0">SQL. NoSQL databases such as Mongo DB and Fauna DB. GraphQL, REST APIs and use of OAuth.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="mt-5">
-                        <div style="height: 70px;">
-                          <img src="https://img.icons8.com/dusk/64/000000/python.png"/>
-                        </div>
-                          <h3 class="h4 mb-2 mt-4 text-white">Python</h3>
-                          <p class="text-muted mb-0">Scripting. Automation. Web/ API development with Python Flask.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-
-       <!-- link to projects page and journey page -->
-       <div class="container w-100">
-         <div class="row no-gutters">
-            <div id="projectsSide" class="col-sm-6 half_section d-flex vh-100 flex-column justify-content-around align-items-center pt-5" style="border-right: 1px solid orange;">
-              <h1 class="text-center drop_in display-1">Projects</h1>
-              <a id='projectsButton' href="/projects"><button class="download_button">
-                <h4>Click to View</h4></button></a>
-            </div>
-            <div id='journeySide' class="col-sm-6 half_section d-flex vh-100 flex-fill flex-column justify-content-around align-items-center pt-5" style="border-left: 1px solid orange;">
-              <h1 class="text-center drop_in display-1">Journey</h1>
-              <a  id='journeyButton' href="/journey"><button class="download_button">
-                <h4>Click to View</h4></button></a>
-            </div> 
-         </div>
-       </div>
-
-      <!-- contact section -->
-      <div id='contact' class="d-flex flex-column align-items-center bg-dark vh-100 p-5">
-        <h1 class="pb-5 text-center display-1 font-weight-bold heading_text">
-          Let<span style="color: orange;">'</span>s
-           get in 
-           touch<span style="color: orange;">.</span>
+    <!--main parallax image and text-->
+    <div class="first_parallax d-flex justify-content-center">
+      <div id="main-text" style="margin-top: 20%">
+        <h1 class="drop_in display-1 font-weight-bold heading_text">
+          <span style="color: orange">C</span>hiraag
+          <span style="color: orange">S</span>
+          <span style="color: orange">A</span>nand
         </h1>
-        <h4 class="pb-5" style="color: #8F8F8F;">Got any questions? I would love to hear from you!</h4>
-        <div class='pt-5 d-flex flex-wrap justify-content-between'>
-            <div class="d-flex m-4 flex-fill flex-column align-items-center text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="pb-5 bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill='orange' fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-              </svg>
-              <a href="tel:+6583211737"><h4>+65 8321 1737</h4></a>
+        <div style="position: sticky" id="labels">
+          <h4 id="avidLearner" class="subheading_text">Avid Learner</h4>
+          <h4 id="techEnthusiast" class="subheading_text">Tech Enthusiast</h4>
+        </div>
+        <div class="scroll_arrow_line"></div>
+        <div class="scroll_arrow"></div>
+      </div>
+    </div>
+
+    <!-- intro section -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+          <div
+            class="d-flex align-items-center flex-column justify-content-center pt-5 pb-5"
+          >
+            <h1 class="text-center heading_text">Intro</h1>
+            <br />
+            <p class="delayed_slide_in p-5 subheading_text">
+              Hello! Chiraag here. Having completed my national service, I am
+              constantly seeking opportunities to grow professionally and as a
+              person. I have a deep passion for technology and a strong interest
+              in business development and finding solutions.
+            </p>
+            <br />
+            <br />
+            <div class="mx-auto">
+              <a href="./static/Anand Chiraag Singh Resume.pdf" download
+                ><button class="download_button">
+                  <h4>Download Resume</h4>
+                </button></a
+              >
             </div>
-            <div class="d-flex m-4 flex-fill flex-column align-items-center text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="pb-5 bi bi-envelope-fill" viewBox="0 0 16 16">
-                <path fill='orange' d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-              </svg>
-              <a href="mailto:chiraagsinghanand@gmail.com"><h4>chiraagsinghanand@gmail.com</h4></a>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+
+    <!-- Tech skills -->
+
+    <div class="diagonal-box">
+      <div class="content">
+        <section class="" id="skills">
+          <h1 class="heading_text text-center">Skills</h1>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 text-center">
+              <div class="mt-5">
+                <div style="height: 70px">
+                  <img src="https://img.icons8.com/nolan/64/javascript.png" />
+                </div>
+                <h3 class="h4 mb-2 mt-4 text-white">Javascript</h3>
+                <p class="text-muted mb-0">
+                  Javascript and frontend frameworks such as ReactJS, Redux and
+                  NextJS. Backend with Node.
+                </p>
+              </div>
             </div>
+            <div class="col-lg-6 col-md-6 text-center">
+              <div class="mt-5">
+                <div style="height: 70px">
+                  <img
+                    src="https://img.icons8.com/fluent/48/000000/source-code.png"
+                  />
+                </div>
+                <h3 class="h4 mt-4 mb-2 text-white">HTML & CSS</h3>
+                <p class="text-muted mb-0">
+                  Skilled with HTML, CSS and front end libraries such as
+                  Bootstrap.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+              <div class="mt-5">
+                <div style="height: 70px">
+                  <img
+                    src="https://img.icons8.com/dusk/64/000000/cloud-database.png"
+                  />
+                </div>
+                <h3 class="h4 mb-2 mt-4 text-white">Backend (Web)</h3>
+                <p class="text-muted mb-0">
+                  SQL. NoSQL databases such as Mongo DB and Fauna DB. GraphQL,
+                  REST APIs and use of OAuth.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+              <div class="mt-5">
+                <div style="height: 70px">
+                  <img src="https://img.icons8.com/dusk/64/000000/python.png" />
+                </div>
+                <h3 class="h4 mb-2 mt-4 text-white">Python</h3>
+                <p class="text-muted mb-0">
+                  Scripting. Automation. Web/ API development with Python Flask.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- link to projects page and journey page -->
+    <div class="row no-gutters">
+      <div
+        id="projectsSide"
+        class="col-sm-6 half_section d-flex vh-100 flex-column justify-content-around align-items-center pt-5"
+        style="border-right: 1px solid orange"
+      >
+        <h1 class="text-center drop_in display-1">Projects</h1>
+        <a id="projectsButton" href="/projects"
+          ><button class="download_button">
+            <h4>Click to View</h4>
+          </button></a
+        >
+      </div>
+      <div
+        id="journeySide"
+        class="col-sm-6 half_section d-flex vh-100 flex-column justify-content-around align-items-center pt-5"
+        style="border-left: 1px solid orange"
+      >
+        <h1 class="text-center drop_in display-1">Journey</h1>
+        <a id="journeyButton" href="/journey"
+          ><button class="download_button">
+            <h4>Click to View</h4>
+          </button></a
+        >
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div
+      id="contact"
+      class="d-flex flex-column align-items-center vh-100 p-5"
+      style="background-color: #343434"
+    >
+      <h1 class="pb-5 text-center display-1 font-weight-bold heading_text">
+        Let<span style="color: orange">'</span>s get in touch<span
+          style="color: orange"
+          >.</span
+        >
+      </h1>
+      <h4 class="pb-5" style="color: #8f8f8f">
+        Got any questions? I would love to hear from you!
+      </h4>
+      <div class="pt-5 d-flex flex-wrap justify-content-between">
+        <div
+          class="d-flex m-4 flex-fill flex-column align-items-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="currentColor"
+            class="pb-5 bi bi-telephone-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="orange"
+              fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+            />
+          </svg>
+          <a href="tel:+6583211737"><h4>+65 8321 1737</h4></a>
+        </div>
+        <div
+          class="d-flex m-4 flex-fill flex-column align-items-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="currentColor"
+            class="pb-5 bi bi-envelope-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="orange"
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+            />
+          </svg>
+          <a href="mailto:chiraagsinghanand@gmail.com"
+            ><h4>chiraagsinghanand@gmail.com</h4></a
+          >
         </div>
       </div>
+    </div>
 
     <!-- GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- script for animation -->
     <script>
+      // intro animation
+      gsap
+        .timeline()
+        .from(".drop_in", {
+          opacity: 0,
+          duration: 1.5,
+          y: -120,
+          ease: "Power2.easeInOut",
+        })
+        .from("#avidLearner", { opacity: 0, duration: 0.5, x: -100 })
+        .from("#techEnthusiast", { opacity: 0, duration: 0.5, x: 100 })
+        .from(".scroll_arrow_line", { height: 0, duration: 0.5 })
+        .from(".scroll_arrow", {
+          opacity: 0,
+          ease: "Power2.easeInOut",
+          repeat: -1,
+        });
 
-       // intro animation
-       gsap.timeline()
-        .from('.drop_in', {opacity: 0, duration: 1.5, y:-120, ease: 'Power2.easeInOut'})
-        .from('#avidLearner', {opacity: 0, duration:0.5, x:-100})
-        .from('#techEnthusiast', {opacity: 0, duration:0.5, x:100})
-        .from('.scroll_arrow_line', {height: 0, duration:0.5})
-        .from('.scroll_arrow', {opacity: 0, ease: 'Power2.easeInOut', repeat: -1})
+      gsap.from(".delayed_slide_in", {
+        scrollTrigger: { trigger: ".download_button", start: "top bottom" },
+        opacity: 0,
+        duration: 1,
+        x: -100,
+      });
 
-
-        gsap.from('.delayed_slide_in', {scrollTrigger: {trigger: '.download_button', start: 'top bottom'}, opacity: 0, duration:1, x:-100})
-
-      $(document).ready(function() {
-        const hash = window.location.hash
-        console.log(hash)
+      $(document).ready(function () {
+        const hash = window.location.hash;
+        console.log(hash);
 
         if (hash === "#contact") {
-          const contact = document.getElementById("contact")
-          contact.scrollIntoView()
+          const contact = document.getElementById("contact");
+          contact.scrollIntoView();
         }
-        $('#projectsButton').hover(
-          () => {
-            $('#projectsSide').toggleClass("half_section")
-            $('#projectsSide').toggleClass("half_section_hover")
-          }
-        )
+        $("#projectsButton").hover(() => {
+          $("#projectsSide").toggleClass("half_section");
+          $("#projectsSide").toggleClass("half_section_hover");
+        });
 
-
-        $('#journeyButton').hover(
-          () => {
-            $('#journeySide').toggleClass("half_section")
-            $('#journeySide').toggleClass("half_section_hover")
-          }
-        )
-      })
-
+        $("#journeyButton").hover(() => {
+          $("#journeySide").toggleClass("half_section");
+          $("#journeySide").toggleClass("half_section_hover");
+          $("body").toggleClass("root");
+          $("body").toggleClass("root_white");
+        });
+      });
     </script>
   </body>
 </html>
