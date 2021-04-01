@@ -56,15 +56,6 @@
   -webkit-transform: rotate(45deg);
 }
 
-.three_arrows {
-  border: solid orange;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
 .centered {
   top: 50%;
   left: 50%;
@@ -101,21 +92,6 @@ a:hover {
   transition: all 0.8s;
 }
 
-.section--header {
-  font-size: 5rem;
-  padding-bottom: 30px;
-}
-
-.section--one {
-  color: white;
-  background-color: black;
-}
-
-.section--two {
-  color: black;
-  background-color: #3d87ff;
-}
-
 section {
   font-weight: 900;
 
@@ -147,13 +123,6 @@ section.active {
   min-width: 300px;
   background-color: orange;
   border-radius: 10px;
-}
-
-.journey_line {
-  position: fixed;
-  left: 50vw;
-  height: 100vh;
-  background-color: orange;
 }
 
 .half_section {
