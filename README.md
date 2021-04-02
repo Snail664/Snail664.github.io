@@ -1,3 +1,3 @@
 # Snail664.github.io
-About me
+About me.
 Visit www.chiraaganand.com
