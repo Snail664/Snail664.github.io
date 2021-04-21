@@ -1,35 +1,120 @@
-<!-- ride friend -->
-<div class="w-100 mt-5 p-5 project_box">
-    <h1 class="pb-3 text-center orange">Ride Friend</h1>
-    <p>
-      Ride Friend is a car-pooling application still under development. Ride Friend is collaboration
-       with 2 others. It is the fist project I intend to take to production. Stay tuned for more info!
-    </p>
-    
-    <div class="d-flex flex-wrap justify-content-between">
-      <div class="card">
-        <h2 class="p-3 text-center">Collaboration</h2>
-        <p>
-          Being my first collaborative project. Through Ride Friend I am learning to work with others by 
-          better organising and planning team tasks. Collaboration has also provided me an opportunity to 
-          hone my communication skills, in a setting as professional as possible barring internships or 
-          university.
-        </p>
-      </div>
-      <div class="card">
-        <h2 class="p-3 text-center">Empathy</h2>
-        <p>
-          Working on Ride Friend has taught me how to solve problems on the go, with the target audience in mind.
-           Trying to understand the target audience has helped develop greater empathy.
-        </p>
-      </div>
-      <div class="card">
-        <h2 class="p-3 text-center">Skills</h2>
-        <p>
-          Ride Friend is deliberately built with the use of a technology stack I was unfamiliar with rather than
-           something I had done a thousand times. This skill of quick learning is highly applicable in the fast paced
-            tech industry; and is a skill I am focused on developing.
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+     <!-- stylesheet -->
+     <link href="./static/styles.css" rel="stylesheet" type="text/css" />
+     <link href="./static/special.scss" rel="stylesheet" type="text/scss" />
+
+    <title>Chiraag - Ride Friend</title>
+  </head>
+  <body class="root text-white">
+    <div class="d-flex justify-content-center">
+      <div class="w-75 d-flex justify-content-between">
+        <a href="/journey" class="w-100 pt-3 pb-2 text-center nav_link"
+          >My Journey</a
+        >
+        <a href="/projects" class="w-100 pt-3 pb-2 text-center nav_link"
+          >Projects</a
+        >
+        <a href="#contact" class="w-100 pt-3 pb-2 text-center nav_link"
+          >Contact</a
+        >
       </div>
     </div>
+
+    <!-- About ride friend -->
+    <div class="jumbotron root">
+      <h1 class="orange text-center display-2">About Ride Friend</h1>
+      <hr style="background-color: white" class="my-4">
+      <p class="lead">Ride Friend is a car-pooling application still under development. Ride
+        Friend is collaboration with 2 others. This application will be deployed for public use later in 2021. Stay tuned for more info!</p>
+      <p class="text-center pt-5 lead">
+        <a class="btn btn-secondary btn-lg" href="#demonstration" role="button">View Demo</a>
+      </p>
+    </div>
+
+      <!-- demonstration -->
+      <section style="background-color: #b4a5a5;" class="page-section pt-5 pb-5" id="demonstration">
+        <div class="container text-center">
+            <h1 class="text-center mt-0" style="color: #301b3f;">Demonstration</h1>
+            <hr class="divider my-4" />
+            <p class="text-dark">
+              The actual app is not yet completed as its details are still being finalised. But here is a small preview
+            </p>
+            <br />
+            <br />
+            <video class="embed-responsive embed-responsive-16by9" controls>
+              <source src="static/RideFriend/ride-friend-demo.mp4" type="video/mp4" />
+            </video>
+    </section>
+
+    <!-- what i learnt-->
+    <section style="background-color: #3c415c;" class="page-section pt-5 pb-5" id="demonstration">
+      <div class="container text-center">
+          <h1 class="text-center mt-0 orange">What I Learnt</h1>
+          <hr class="divider my-4 text-white" />
+          <h2 class="orange">Collaboration</h2>
+          <p class="text-left">
+            Being my first collaborative project. Through Ride Friend I am
+            learning to work with others by better organising and planning team
+            tasks. Collaboration has also provided me an opportunity to hone my
+            communication skills, in a setting as professional as possible
+            barring internships or university.</p>
+            <br />
+            <br />
+            <h2 class="orange">Empathy</h2>
+           <p class="text-left"> Working on Ride Friend has taught me how to solve problems on the
+            go, with the target audience in mind. Trying to understand the
+            target audience has helped develop greater empathy.</p>
+            <br />
+            <br />
+            <h2 class="orange">Skills</h2>
+            <p class="text-left">
+            Ride Friend is deliberately built with the use of a technology stack
+            I was unfamiliar with rather than something I had done a thousand
+            times. This skill of quick learning is highly applicable in the fast
+            paced tech industry; and is a skill I am focused on developing.
+          </p>
+  </section>
+
+   <!-- footer -->
+   <div class="bg-dark p-5 d-flex justify-content-center">
+    <h6 class="text-white">
+      Website by Chiraag | <a href="http://www.icons8.com">Icons by icons8</a>
+    </h6>
   </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
