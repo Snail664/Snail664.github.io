@@ -4,7 +4,7 @@
 }
 
 .root_white {
-  background-color: white;
+  background-color: #551a8b;
   overflow-x: hidden;
 }
 
@@ -121,7 +121,7 @@ section.active {
 }
 
 .half_section_hover {
-  background-color: white;
+  background-color: #551a8b;
   color: black;
   font-weight: 900;
 }
@@ -147,4 +147,27 @@ section.active {
   padding: 10px;
   border-radius: 10px;
   background-color: #343434;
+}
+
+.click-card:hover {
+  box-shadow: 0 0 7px #343434;
+  background-color: #343434;
+  transition: all 0.8s;
+}
+
+.card_button {
+  border: orange solid 1px;
+  border-radius: 10px;
+  width: 80%;
+  padding: 20px;
+  color: white;
+  background-color: transparent;
+}
+
+.card_button:hover {
+  border-radius: 10px;
+  border: orange solid 1px;
+  color: black;
+  background-color: orange;
+  transition: all 0.8s;
 }
